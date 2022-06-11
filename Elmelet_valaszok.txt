@@ -1,0 +1,33 @@
+1.
+Exception = ellenőrzött hiba
+RuntimeException = nem ellenőrzött hiba
+
+Az ellenőrzött hibákat kötelező elkapni, a nem ellenőrzött hibákat viszont nem viszont az utóbbiakat ki lehet védeni
+jól megírt kóddal.
+
+2.
+Egy kollekcióból bejárás közben biztonságosan törölni úgy lehet ha Iterator-t használunk.
+
+pl.:
+
+List<String> shoppingList = //...
+
+Iterator<String> itr = shoppingList.iterator();
+
+while(itr.hasNext()) {
+// itt lehet törölni a listából az itr.remove() metódussal
+}
+
+3.
+abstraction: egyszerűbb dolgok mögött összetettebb műlködés van
+encapsulation: csak a birtokló fér hozzá a dolgaihoz
+inheritance: egy osztály örököl egy másiktól
+polymorphism: egy metódus ugyanazon a néven mást csinál másik olsztályokban
+association: objektumok közötti kapcsolat,
+        fajtái:
+            aggregation: egy objektumhoz tartozik egy másik ami önállóan is létezhet
+            composition: egy objektumhoz tartozik egy másik ami önállóan nem létezhet
+
+4.
+Listában tárol példányoknál, ha a példányosított osztályban inplementáljuk a comparable interface-t akkor sorba tudjuk
+rendezni a listában elhejezett példányokat.
